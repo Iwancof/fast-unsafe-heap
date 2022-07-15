@@ -1,0 +1,16 @@
+.text
+
+.global super_malloc
+.global super_free
+
+.globl malloc_trampoline
+.type malloc_trampoline, @function
+malloc_trampoline: 
+  jmp super_malloc
+
+.global malloc_trampoline_size
+.rodata
+malloc_trampoline_size:
+.size malloc_trampoline, .-malloc_trampoline
+  
+
