@@ -7,7 +7,7 @@ static void *heap_front;
 void fuh_init(size_t);
 
 static __attribute__((constructor)) void fuh_default_init() {
-  fuh_init(0x1000);
+  fuh_init(0x10000);
 }
 
 static size_t alignment(size_t val, size_t align) {
