@@ -28,4 +28,6 @@ void *fuh_alloc(size_t size, size_t align) {
   return ret;
 }
 
-void fuh_dealloc(void *ptr) {}
+void fuh_dealloc(void *ptr) {
+  // fuh??
+}
