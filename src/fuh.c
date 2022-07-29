@@ -4,7 +4,7 @@
 
 static void *heap_front;
 
-static void fuh_init(size_t);
+void fuh_init(size_t);
 
 static __attribute__((constructor)) void fuh_default_init() {
   fuh_init(0x1000);
